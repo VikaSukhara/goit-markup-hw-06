@@ -61,7 +61,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-text">Effective Solutions for Your Business</h1>
-          <button class="hero-button" data-modal-open type="button">Order Service</button>
+          <button class="hero-button" data-modal-open type="button">
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -371,8 +373,8 @@
           </p>
         </div>
 
-        <div>
-          <p class="footer-text">Social media</p>
+        <div class="foot-links">
+          <p class="footer-text-title">Social media</p>
           <ul class="foot-soc-list list">
             <li class="foot-soc-item item">
               <a class="foot-soc-link link" href="">
@@ -404,16 +406,103 @@
             </li>
           </ul>
         </div>
+
+        <div class="input-foot-wrap">
+          <form action="">
+            <p class="input-foot-text">Subscribe</p>
+            <div class="wrap-input-foot">
+              <label for="subscribe"></label>
+              <input
+                class="input-footer"
+                type="mail"
+                name=""
+                id="subscribe"
+                placeholder="E-mail"
+              />
+
+              <button class="input-btn-footer" type="submit">Subscribe
+                <svg width="24" height="24">
+                  <use href="./images/customers-icon.svg#icon-plane"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
 
+    <!-- MODAL -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" data-modal-close class="modal-button">
-          <svg class="modal-icon" >
-            <use href="./images/customers-icon.svg#icon-crosss" ></use>
+          <svg class="modal-icon">
+            <use href="./images/customers-icon.svg#icon-crosss"></use>
           </svg>
         </button>
+
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+
+        <form action="">
+          <div class="modal-field">
+            <label class="modal-label" for="name">Name</label>
+            <div class="modal-wrap">
+              <input id="name" class="modal-input" type="text" />
+              <svg class="modal-input-icon" width="18px" height="18px">
+                <use href="./images/customers-icon.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-field">
+            <label class="modal-label" for="tel">Phone</label>
+            <div class="modal-wrap">
+              <input id="tel" class="modal-input" type="tel" />
+              <svg class="modal-input-icon" width="18px" height="24px">
+                <use href="./images/customers-icon.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-field">
+            <label class="modal-label" for="mail">Email</label>
+            <div class="modal-wrap">
+              <input id="mail" class="modal-input" type="mail" />
+              <svg class="modal-input-icon" width="18px" height="24px">
+                <use href="./images/customers-icon.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-comment-field">
+            <label class="modal-label" for="comment">Comment</label>
+            <textarea
+              placeholder="Text imput"
+              class="modal-input modal-comment"
+              name=""
+              id="comment"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="check-wrap">
+            <input
+              class="modal-check visually-hidden"
+              type="checkbox"
+              id="check"
+            />
+            <label class="modal-label-check" for="check">
+              <span>
+                <svg width="10" height="8">
+                  <use href="./images/customers-icon.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="check-link" href="">Privacy Policy</a></label
+            >
+          </div>
+          <button class="btn-inputs" type="submit">Send</button>
+
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
