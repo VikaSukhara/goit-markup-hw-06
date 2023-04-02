@@ -449,7 +449,7 @@ img {
 /* footer */
 .footer-sect {
   background-color: var(--background-secon-color);
-  padding: 100px 15px;
+  padding: 100px 0;
 }
 
 .footer-main-cont {
@@ -462,7 +462,6 @@ img {
 .foot-soc-list {
   display: flex;
   gap: 16px;
-  margin-top: 16px;
 }
 
 .foot-soc-item {
@@ -513,6 +512,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--border-bottom);
+  margin-bottom: 16px;
 }
 
 .wrap-input-foot{
@@ -526,7 +526,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--white-color);
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 .input-footer {
   background-color: transparent;
@@ -720,7 +720,6 @@ fill: currentColor;
 .modal-button {
   width: 24px;
   height: 24px;
-  display: block;
   margin-left: auto;
   background: var(--border-bottom);
   border-radius: 50%;
@@ -810,9 +809,8 @@ fill: currentColor;
   display: flex;
   gap: 5px;
   fill: transparent;
-  display: flex;
   align-items: center;
-  justify-content: center;
+
 }
 
 .modal-label-check span {
@@ -835,7 +833,6 @@ fill: currentColor;
 
 .check-wrap {
   margin-bottom: 24px;
-  justify-content: center;
 }
 
 .modal-title {
